@@ -2,6 +2,7 @@ import 'normalize.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
+
 import React from "react";
 import { MDBCol, MDBContainer, MDBFooter, MDBRow } from "mdbreact";
 function Footer(props){
@@ -28,19 +29,20 @@ function Footer(props){
                     <h5 className="title">Links</h5>
                     <ul>
                         <li>
-                            <a href="#!">Contact us</a>
+                            <a  href="/Contact">Contact us</a>
+
                         </li>
                         <li>
-                            <a href="#!">About</a>
+                            <a href="/About">About</a>
                         </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Men's Wear</a>
+                        <li>
+                            <a href="/MEN">Men's Wear</a>
                         </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Women's Wear</a>
+                        <li>
+                            <a href="/WOMEN">Women's Wear</a>
                         </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Children</a>
+                        <li>
+                            <a href="/CHILDREN">Children</a>
                         </li>
                     </ul>
                 </MDBCol>
