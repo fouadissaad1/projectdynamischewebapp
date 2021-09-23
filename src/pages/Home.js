@@ -10,7 +10,7 @@ export function Home() {
         <MDBContainer fluid className="purple-gradient color-block-5 mb-3 mx-auto rounded-circle z-depth-1">
             <MDBRow>
                 <MDBCol lg={3} >
-                    <h1  className="red-text bg-dark flex-center">COATS FOR</h1>
+                    <h1  className="red-text flex-center">COATS FOR</h1>
                 </MDBCol>
                 <MDBCol lg={3}>
                     <MDBIcon icon="check"/>   <p >Women's</p>
