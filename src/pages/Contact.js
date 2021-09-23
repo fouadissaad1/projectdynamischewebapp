@@ -1,11 +1,11 @@
 import React from "react";
-import { MDBCard, MDBCardText, MDBCardTitle, MDBContainer, MDBRow } from "mdbreact";
+import { MDBCard, MDBCardText, MDBCardTitle, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
 
 export function Contact() {
     return (
         <MDBContainer>
-            <MDBRow>
+              <MDBRow>
                 <MDBCard className="card-body" style={{width: "21rem"}}>
                     <MDBCardTitle><h2>Contact information</h2></MDBCardTitle>
                     <MDBCardText>
