@@ -7,6 +7,7 @@ import { WOMEN } from "../pages/WOMEN";
 import { CHILDREN } from "../pages/CHILDREN";
 import { Home } from "../pages/Home";
 
+
 function NavBar() {
     const [open, setOpen]=useState(false);
 
@@ -15,7 +16,7 @@ function NavBar() {
             <div>
 
                 <nav>
-                    <div className="logo" onAnimationStart={onscroll}>Shopping</div>
+                    <div className="logo">Shopping</div>
                     <ul className="nav-links" style={{transform: open ? "translateX(0px)" :"translateX(-500px)"}}>
 
                         <li>

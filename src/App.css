@@ -57,11 +57,20 @@ h3{
     text-align: center;
 }
 img{
-    width: 400px;
-    height: 500px;
+    width: auto;
+    height: auto;
     border-radius: 50px;
     padding: 5px;
     border: 3px solid #ddd;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    font-family: inter;
+    background-color: lightgrey;
 }
 .footer{
     font-family: cursive;
@@ -73,21 +82,14 @@ img{
     color: white;
     text-align: center;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    min-height: 10vh;
-    align-items: center;
-    font-family: inter;
-    background-color: lightgrey;
-}
-
 nav .logo{
 
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
+
+
 nav .nav-links{
     display: flex;
     justify-content: space-around;
