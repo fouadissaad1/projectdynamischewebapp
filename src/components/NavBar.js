@@ -9,12 +9,13 @@ import { Home } from "../pages/Home";
 
 function NavBar() {
     const [open, setOpen]=useState(false);
+
     return (
         <Router>
             <div>
 
                 <nav>
-                    <div className="logo">Shopping</div>
+                    <div className="logo" onAnimationStart={onscroll}>Shopping</div>
                     <ul className="nav-links" style={{transform: open ? "translateX(0px)" :"translateX(-500px)"}}>
 
                         <li>

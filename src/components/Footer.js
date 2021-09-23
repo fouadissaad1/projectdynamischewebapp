@@ -5,7 +5,7 @@ import 'mdbreact/dist/css/mdb.css';
 import React from "react";
 import { MDBCol, MDBContainer, MDBFooter, MDBRow } from "mdbreact";
 function Footer(props){
-    return (<MDBFooter color="blue" className="font-small pt-4 mt-4">
+    return (<MDBFooter color="blue" className="font-small pt-6 mt-4">
         <MDBContainer fluid className="text-center text-md-left">
             <MDBRow>
                 <MDBCol md="6">
