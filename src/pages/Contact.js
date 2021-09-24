@@ -8,7 +8,7 @@ export function Contact() {
     return (
         <React.Fragment>
             <MDBRow></MDBRow>
-            <MDBRow color={"red"} bgColor={"primary"}>
+            <MDBRow color={"red"}>
                 <MDBCol lg={1}></MDBCol>
                 <MDBCol lg={2}>
                     <MDBBtn onClick={toggleShow}>Contact information</MDBBtn>
