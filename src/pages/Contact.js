@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Business, Consumer, ContactInformation, Payments, ServiceWarranty } from "../components/ContactInformation";
 
 export function Contact() {
-
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
     return (
