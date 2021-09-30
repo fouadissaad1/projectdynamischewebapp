@@ -2,6 +2,7 @@ import { MDBBtn, MDBCol, MDBCollapse, MDBRow } from "mdb-react-ui-kit";
 import React, { useState } from "react";
 import { Business, Consumer, ContactInformation, Payments, ServiceWarranty } from "../components/ContactInformation";
 
+
 export function Contact() {
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
@@ -11,6 +12,7 @@ export function Contact() {
             <MDBRow color={"red"}>
                 <MDBCol lg={1}></MDBCol>
                 <MDBCol lg={2}>
+
                     <MDBBtn onClick={toggleShow}>Contact information</MDBBtn>
                     <MDBCollapse show={showShow}>
                         <ContactInformation></ContactInformation>

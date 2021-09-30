@@ -5,23 +5,23 @@ export function ContactInformation(props) {
         options.</p>
 }
 
-export function Consumer(props) {
+export function Consumer() {
     return <p>Question?<br></br>
         klantenservice@clothingshop.be <br></br>
         +32 (0) 493 99 99 44 <br></br>
     </p>
 }
 
-export function ServiceWarranty(props) {
+export function ServiceWarranty() {
     return <p> service@clothingshop.be</p>
 }
 
-export function Payments(props) {
+export function Payments() {
     return <p>Question? <br/>
         administratie@cothingshop.be</p>
 }
 
-export function Business(props) {
+export function Business() {
     return <p>Question?<br/>
         verkoop@cothingshop.be<br/>
         +32 (0) 493 99 99 45</p>

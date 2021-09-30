@@ -3,18 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-}
-.labelAbout{
-    color: red;
-    font-size: 20px;
-}
-.container {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
 
+p{
+    font-size: 15px;
 }
+
 li{
   text-align: left;
    list-style-type: none;
@@ -23,21 +16,12 @@ a{
     text-decoration: none;
 }
 
-h2{
-    font-size: 40px;
-    color: deepskyblue;
-}
-
 .pAboutStyle{
     font-size: 30px;
     color: #cccccc;
 }
 .pFooterStyle{
     font-size: 30px;
-}
-h3{
-    font-size: 40px;
-    color: deepskyblue;
 }
 
 .manStyle{

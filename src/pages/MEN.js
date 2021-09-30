@@ -1,6 +1,6 @@
 import React from "react";
 import { MEN_CLOTHING_DATA } from "../data/data";
-
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardText, MDBCardTitle } from "mdb-react-ui-kit";
 
 function Category(props){
     const {category}=props;
@@ -14,35 +14,28 @@ function Category(props){
 
 function Man(props){
     const {man}=props;
-    return <div  className="container">
+    return (
+        <MDBCard style={{ maxWidth: '22rem' }}>
+            {man.image}
+            <MDBCardBody>
+                <MDBCardTitle>{man.name}</MDBCardTitle>
+                <MDBCardText>
+                    <p className="pMenStyle">size: {man.size} </p>
+                    <p className="pMenStyle">color: {man.color}</p>
+                    <p className="pMenStyle">how much: {man.prijs}&euro;</p>
 
-        <div className="manStyle">
-            <br/><br/><br/><br/>
-            <h3 >{man.name}</h3>
-            <p className="pMenStyle">size: {man.size} </p>
-            <p className="pMenStyle">color: {man.color}</p>
-           <p className="pMenStyle">how much: {man.prijs}&euro;</p>
-
-            <form>
-                <label>
-                    how much:
-                    <input type="number"  name="name" />
-                </label><br/>
-                <input type="submit" value="Submit" />
-            </form>
-        </div >
-        <div className="manStyle">{man.image}</div>
-        <div></div>
-
-
-
-    </div>
+                </MDBCardText>
+                <MDBBtn href='#'>Ordre</MDBBtn>
+            </MDBCardBody>
+        </MDBCard>
+    );
 }
 
 
 export function MEN() {
     return (
         <div>
+
             <h2>Men</h2>
 
             <hr/>
