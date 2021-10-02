@@ -3,10 +3,12 @@ import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import KidAccPink from "../images/clothting/kids/girls/accesoires/V6808A6_21AU_PN1_02_01_600x.jpg";
 import KidAccPrintedPink from "../images/clothting/kids/girls/accesoires/U1370A6_21SM_PN1_03_01_600x.jpg";
 import KidAccBugsPink from "../images/clothting/kids/girls/accesoires/V1721A6_21WN_GR100_01_01_600x.jpg";
+import KidLingBugsBeige from "../images/clothting/kids/girls/Leggings/H6991A6_20AU_BG287_01_01_600x.jpg";
+import KidLingBugsGe from "../images/clothting/kids/girls/Leggings/T5991A6_20WN_GN7_01_01_600x.jpg";
+import KidLingBugsBe from "../images/clothting/kids/girls/Leggings/H6991A6_20AU_BR88_01_02_600x.jpg";
 
 const Kids_data = [
     {
-
         title:"Girl",
         name: "accesoires",
         KidPruducts: [
@@ -30,10 +32,37 @@ const Kids_data = [
                 color: "Grey",
                 price: 10,
                 image: <img src={KidAccBugsPink} alt="KidAccBugsPink"/>
-            }
+            },
         ]
 
+
+    },
+    {
+        name: "Leggings",
+        KidPruducts:[
+            {
+                id:1,
+                name:"Slim Fit Ornamental Pocket Detailed Velvet Fabric Leggings",
+                color:"Beige",
+                price:14,
+                image: <img src={KidLingBugsBeige} alt="KidLingBugsBeige"/>
+            },
+            {
+                id:2,
+                name:"Printed Text Tights",
+                price:11,
+                image: <img src={KidLingBugsGe} alt="KidLingBugsGe"/>
+            },
+            {
+                id:3,
+                name:"Slim Fit Ornamental Pocket Detailed Velvet Fabric Leggings",
+                color:"Bordeaux",
+                price:12.54,
+                image: <img src={KidLingBugsBe} alt="KidLingBugsBe"/>
+            }
+        ]
     }
+
 ]
 
 function Category(props) {
