@@ -12,6 +12,9 @@ import KidSkirtbr from "../images/clothting/kids/girls/skirts&shorts/S5917A6_20W
 import KidAccBoy from "../images/clothting/kids/boy/acce/N6830A6_21SP_IN8_02_02_600x.jpg";
 import KidAccBoyHa from "../images/clothting/kids/boy/acce/S7000A6_21AU_BR2_01_01_600x.jpg";
 import KidAccBoyU from "../images/clothting/kids/boy/acce/U0056A6_20WN_BK27_02_02_600x.jpg";
+import KidOutB from "../images/clothting/kids/boy/out/N8173A6_21SP_KH287_01_02_600x.jpg";
+import KidOutIn from "../images/clothting/kids/boy/out/N8178A6_21SP_IN120_01_02_600x.jpg";
+import KidOutInt from "../images/clothting/kids/boy/out/N8171A6_20AU_BK27_02_02_600xi.jpg";
 
 const Kids_data = [
     {
@@ -121,6 +124,33 @@ const Kids_data = [
                 image: <img src={KidAccBoyU} alt="KidAccBoyU"/>
             }
         ]
+    },
+    {
+        name: "Outerwear",
+        KidPruducts: [
+            {
+                id:1,
+                name:"Regular Fit Coat ",
+                color: "Khaki",
+                price: 50.58,
+                image: <img src={KidOutB} alt="KidOutB"/>
+            },
+            {
+                id:2,
+                name:"Regular Fit Coat",
+                color: "Indigo",
+                price: 60,
+                image: <img src={KidOutIn} alt="KidOutIn"/>
+            },
+            {
+                id:3,
+                name:"Regular Fit Coat",
+                color: "Black",
+                price: 44.95,
+                image: <img src={KidOutInt} alt="KidOutInt"/>
+            }
+        ]
+
     }
 
 ]
