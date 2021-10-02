@@ -15,6 +15,9 @@ import KidAccBoyU from "../images/clothting/kids/boy/acce/U0056A6_20WN_BK27_02_0
 import KidOutB from "../images/clothting/kids/boy/out/N8173A6_21SP_KH287_01_02_600x.jpg";
 import KidOutIn from "../images/clothting/kids/boy/out/N8178A6_21SP_IN120_01_02_600x.jpg";
 import KidOutInt from "../images/clothting/kids/boy/out/N8171A6_20AU_BK27_02_02_600xi.jpg";
+import KidShortBlue from "../images/clothting/kids/boy/Shorts/U0874A6_21HS_NM28_01_01_600x.jpg";
+import KidShortGer from "../images/clothting/kids/boy/Shorts/T7756A6_21SP_GN667_02_01_600x.jpg";
+import KidShortGr from "../images/clothting/kids/boy/Shorts/U5731A6_21SM_GR400_02_02_600x.jpg";
 
 const Kids_data = [
     {
@@ -148,6 +151,33 @@ const Kids_data = [
                 color: "Black",
                 price: 44.95,
                 image: <img src={KidOutInt} alt="KidOutInt"/>
+            }
+        ]
+
+    },
+    {
+        name: "Shorts",
+        KidPruducts: [
+            {
+                id:1,
+                name:"Basic Drawstring Shorts",
+                color: "Grey",
+                price: 8.58,
+                image: <img src={KidShortGr} alt="KidShortGr"/>
+            },
+            {
+                id:2,
+                name:"Standard Hem Regular Fit Bermuda Shorts",
+                color: "Green",
+                price: 7.95,
+                image: <img src={KidShortGer} alt="KidOutIn"/>
+            },
+            {
+                id:3,
+                name:"Basic Drawstring Denim Bermuda Shorts with Pockets",
+                color: "Blue",
+                price: 12.95,
+                image: <img src={KidShortBlue} alt="KidShortBlue"/>
             }
         ]
 
