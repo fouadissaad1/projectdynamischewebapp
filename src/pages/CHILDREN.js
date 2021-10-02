@@ -18,6 +18,14 @@ import KidOutInt from "../images/clothting/kids/boy/out/N8171A6_20AU_BK27_02_02_
 import KidShortBlue from "../images/clothting/kids/boy/Shorts/U0874A6_21HS_NM28_01_01_600x.jpg";
 import KidShortGer from "../images/clothting/kids/boy/Shorts/T7756A6_21SP_GN667_02_01_600x.jpg";
 import KidShortGr from "../images/clothting/kids/boy/Shorts/U5731A6_21SM_GR400_02_02_600x.jpg";
+import babyvelvetCot from "../images/clothting/kids/baby/clothing/W2550A2_21AU_BR66_01_01_600x.jpg";
+import babysleeveCot from "../images/clothting/kids/baby/clothing/W0873A2_21AU_BG285_01_01_600x.jpg";
+import babysleeveHeartCot from "../images/clothting/kids/baby/clothing/W3325A2_21AU_BG26_01_01_600x.jpg";
+
+import babyShoeBlue from "../images/clothting/kids/baby/shoes/FST00217_21SM_BE2_04_01_600x.jpg";
+import babyShoePing from "../images/clothting/kids/baby/shoes/FST00108_21SM_PN381_06_01_600x.jpg";
+import babyShoePing2 from "../images/clothting/kids/baby/shoes/FST00113_21SM_PN32_05_01_600x.jpg";
+
 
 const Kids_data = [
     {
@@ -178,6 +186,61 @@ const Kids_data = [
                 color: "Blue",
                 price: 12.95,
                 image: <img src={KidShortBlue} alt="KidShortBlue"/>
+            }
+        ]
+
+    },
+    {
+        title: "Baby",
+        name: "Clothing",
+        KidPruducts: [
+            {
+                id:1,
+                name:"Sleeveless Velvet Mini Dress",
+                color: "Bordeaux",
+                price: 28.58,
+                image: <img src={babyvelvetCot} alt="babyvelvetCot"/>
+            },
+            {
+                id:2,
+                name:"Long Sleeve Printed Newborn Bodysuit",
+                color: "Beige",
+                price: 37.95,
+                image: <img src={babysleeveCot} alt="babysleeveCot"/>
+            },
+            {
+                id:3,
+                name:"Long Sleeve Heart Print Pyjamas Set",
+                color: "Beige",
+                price: 32.95,
+                image: <img src={babysleeveHeartCot} alt="babysleeveHeartCot"/>
+            }
+        ]
+
+    },
+    {
+        name: "Shoes",
+        KidPruducts: [
+            {
+                id:1,
+                name:"Hook And Loop Shoes",
+                color: "Blue",
+                price: 18.58,
+                image: <img src={babyShoeBlue} alt="babyShoeBlue"/>
+            },
+            {
+                id:2,
+                name:"Hook And Loop Shoes",
+                color: "Pink",
+                price: 17.95,
+                image: <img src={babyShoePing} alt="babyShoePing"/>
+            },
+            {
+                id:3,
+                name:"Hook And Loop Shoes",
+                color: "Beige",
+                price: 12.95,
+                image: <img src={babyShoePing2} alt="babyShoePing2"/>
             }
         ]
 
