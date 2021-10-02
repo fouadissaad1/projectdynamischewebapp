@@ -22,6 +22,7 @@ import WomenJeansBlack from "../images/clothting/Women/Jeans/T9537AZ_21SM_NM40_0
 import WomenJeansBlue1 from "../images/clothting/Women/Jeans/S7241AZ_21SP_NM28_01_01_600x.jpg";
 import WomenJeansBlue2 from "../images/clothting/Women/Jeans/L0595AZ_20SP_NM39_01_03_600x.jpg";
 import WomenJeansBlue3 from "../images/clothting/Women/Jeans/V4998AZ_21AU_NM28_01_01_600x.jpg";
+import WomenJacketYellow from "../images/clothting/Women/Jackets/R0390AZ_20WN_YL2_01_02_600x.jpg";
 
 export const TEAM_DATA = [
     {
@@ -237,7 +238,8 @@ export const WOMEN_CLOTHING_DATA = [
     {
         name: "jackets",
         womenProduts: [
-            {name: "Dreses", size: "L", color: "Yellow", prijs: 9.9},
+            {name: "Dreses", size: "L", color: "Yellow", prijs: 9.9,
+                image: <img src={WomenJacketYellow} alt="WomenJacketYellow"/>}
         ],
 
     }

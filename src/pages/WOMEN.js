@@ -1,5 +1,15 @@
 import React from "react";
 import { WOMEN_CLOTHING_DATA } from "../data/data";
+import {
+    MDBBtn,
+    MDBCard,
+    MDBCardBody,
+    MDBCardText,
+    MDBCardTitle,
+    MDBCol,
+    MDBContainer,
+    MDBRow
+} from "mdb-react-ui-kit";
 
 function Category(props) {
     const {category} = props;
@@ -11,28 +21,46 @@ function Category(props) {
     </div>
 }
 
+
 function Women(props) {
     const {women} = props;
-    return <div>
-        <div className="tshirtman"><h3>{women.name}</h3></div>
-        <div className="tshirtman">size: {women.size}</div>
-        <div className="tshirtman">color: {women.color}</div>
-        <div className="tshirtman">prijs: {women.prijs}&euro;</div>
-        <div className="tshirtman">foto: {women.image}</div>
-
-    </div>
+    return (
+        <MDBContainer>
+            <MDBRow>
+                <MDBCol>
+                    <MDBCard style={{maxWidth: '22rem'}}>
+                        {women.image}
+                        <MDBCardBody>
+                            <MDBCardTitle>{women.name}</MDBCardTitle>
+                            <MDBCardText>
+                                <p className="pMenStyle">size: {women.size} </p>
+                                <p className="pMenStyle">color: {women.color}</p>
+                                <p className="pMenStyle">how much: {women.prijs}&euro;</p>
+                            </MDBCardText>
+                            <MDBBtn href='#'>Ordre</MDBBtn>
+                        </MDBCardBody>
+                    </MDBCard>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
+    );
 }
 
 export function WOMEN() {
     return (
-        <div>
-            <h2>Women</h2>
-            <div>
-                {
-                    WOMEN_CLOTHING_DATA.map((c, i) => <Category category={c} key={i}/>)
-                }
-            </div>
-        </div>
+        <MDBContainer fluid>
+            <MDBRow>
+                <h2>Women</h2>
+                <hr/>
+            </MDBRow>
+            <MDBRow>
+                {WOMEN_CLOTHING_DATA.map((c, i) =>
+                    <MDBCol>
+                        <Category category={c} key={i}/>
+                    </MDBCol>
+                )}
+            </MDBRow>
+        </MDBContainer>
     );
 }
 
