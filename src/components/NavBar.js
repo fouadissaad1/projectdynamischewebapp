@@ -7,10 +7,8 @@ import { WOMEN } from "../pages/WOMEN";
 import { CHILDREN } from "../pages/CHILDREN";
 import { Home } from "../pages/Home";
 
-
 function NavBar() {
     const [open, setOpen]=useState(false);
-
     return (
         <Router>
             <div>

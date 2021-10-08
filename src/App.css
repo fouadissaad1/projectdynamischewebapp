@@ -3,17 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-p{
-    font-size: 15px;
+body{
+    background-color: black;
 }
+.labelAbout{
+    color: red;
+    font-size: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
 
+}
 li{
-  text-align: left;
-   list-style-type: none;
+    text-align: left;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
+}
+
+h2{
+    font-size: 40px;
+    color: deepskyblue;
 }
 
 .pAboutStyle{
@@ -22,6 +34,10 @@ a{
 }
 .pFooterStyle{
     font-size: 30px;
+}
+h3{
+    font-size: 40px;
+    color: deepskyblue;
 }
 
 .manStyle{
@@ -41,20 +57,11 @@ a{
     text-align: center;
 }
 img{
-    width: auto;
-    height: auto;
+    width: 400px;
+    height: 500px;
     border-radius: 50px;
     padding: 5px;
     border: 3px solid #ddd;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    min-height: 10vh;
-    align-items: center;
-    font-family: inter;
-    background-color: lightgrey;
 }
 .footer{
     font-family: cursive;
@@ -66,14 +73,21 @@ nav{
     color: white;
     text-align: center;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    font-family: inter;
+    background-color: lightgrey;
+}
+
 nav .logo{
 
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
-
 nav .nav-links{
     display: flex;
     justify-content: space-around;
@@ -87,7 +101,7 @@ NAV .nav-links a{
 }
 
 nav .burger {
-   font-size: 30px;
+    font-size: 30px;
     display: none;
     cursor: pointer ;
 }
@@ -122,7 +136,7 @@ NAV .nav-links a:hover{
 
     }
     nav .nav-links li:last-of-type{
-      border-bottom: 0px solid #cccccc;
+        border-bottom: 0px solid #cccccc;
 
     }
 
